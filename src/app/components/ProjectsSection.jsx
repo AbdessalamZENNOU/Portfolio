@@ -10,7 +10,7 @@ const projectsData = [
     title: "Detaillia Website Development",
     description: "Developed the frontend using Angular 17 and integrated PayPal/Stripe payments.",
     image: "/images/projects/detaillia.png",  
-    tag: ["All", "Web"],
+    tag: ["All", "Internships"],
     gitUrl: "https://github.com/your-repo",
     previewUrl: "https://detaillia.com",  
   },
@@ -19,7 +19,7 @@ const projectsData = [
     title: "Marrakech Municipality Website",
     description: "Created responsive user interfaces using Angular and Material UI.",
     image: "/images/projects/marrakech.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Internships"],
     gitUrl: "https://github.com/your-repo",
     previewUrl: "https://marrakech.ma",
   },
@@ -84,14 +84,15 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Internships"
+          isSelected={tag === "Internships"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Academic"
+          isSelected={tag === "Academic"}
         />
+        
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
